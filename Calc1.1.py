@@ -67,20 +67,6 @@ class Calculator:
     def return_round(value):
         return round(value,2)
 
-    # review input parameter, review while True statement
-    # review usage of type()
-    # @staticmethod
-    # def check_if_input_is_number(num_input):
-    #     if type(num_input):
-    #         return True
-    #     else:
-    #         return False
-    #     while True:
-    #         try:
-    #             return str(num_input)
-    #         except ValueError:
-    #             print("That's not a number! Please try again")
-
     def run(self):
 
         while True:
