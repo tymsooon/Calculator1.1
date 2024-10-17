@@ -1,17 +1,12 @@
 class Calculator:
     def __init__(self, x=0, y=0):
-        # read OOP in Python for better coding techniques/way
-        # review x, y variables done?
+
         self.x = x
         self.y = y
 
-    # review @staticmethod #DONE
     def add(self):
         return self.return_round(self.x + self.y)
-
-        # round() should be elsewhere TBD
-        # return round(x + y, 2)
-
+        
     def multiply(self):
         return self.return_round(self.x * self.y)
 
@@ -154,7 +149,6 @@ class Calculator:
                 modulo_result = self.modulo()
                 print("The remainder of this division is " + str(modulo_result))
 
-
             while True:
 
                 another_calculation = input("Do you wish to perform another calculation? (yes/no): ").lower()
@@ -169,7 +163,7 @@ class Calculator:
                 else:
                     print("Invalid input, please enter yes or no")
 
-if __name__ == '__main__':  # understand this
+if __name__ == '__main__':
 
     print("Please select an operation")
     print("1. Add")
@@ -183,19 +177,3 @@ if __name__ == '__main__':  # understand this
 
     calc = Calculator()
     calc.run()
-
-# 1 factorial as an operation #DONE
-# 2 limit decimals to nearest 2 numbers #DONE
-# 3 output as integer #should be only for addition? #DONE
-# 4 adding string? #error message - this is not a number, cant accept it #DONE
-# 5 .upper .lower #DONE
-
-# different class for square, area #DONE
-
-# add options for calculator/basic formulas(compute parameter of a square, area of triangle, rectangle) #DONE
-# floor division as an operation (remainder 20/6 = 2) #DONE
-# learn what is the difference between normal division and floor division #DONE
-
-# changing the input numbers after the calculation ?
-
-# math library?
