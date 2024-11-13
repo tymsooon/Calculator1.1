@@ -59,16 +59,14 @@ class Calculator:
     def modulo(self):
         return self.return_round(self.x % self.y)
 
-    @staticmethod
-    def get_number(input_number):
+    def get_number(self,input_number):
         while True:
             user_input = input(input_number)
             try:
                 return float(user_input)
             except ValueError:
                 print("Invalid input, please enter a number")
-    @staticmethod
-    def return_round(value):
+    def return_round(self,value):
         return round(value,2)
 
     def run(self):
